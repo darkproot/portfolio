@@ -1,15 +1,14 @@
 /* Main part */
 main {
-    background-color: var(--base);
     width: 100%;
-    min-height: 84vh;
+    min-height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container {
-    max-width: 60vw;
+    max-width: 50vw;
     padding: 50px;
     border-radius: 20px;
     display: flex;
@@ -31,6 +30,11 @@ main {
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+#image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #description {
@@ -64,6 +68,10 @@ main {
     text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.479);
 }
 
+#btn-container {
+    width: 100%;
+    display: flex;
+}
 #description button {
     padding: 10px 20px;
     border-radius: 10px;
@@ -82,16 +90,23 @@ main {
     background-color: var(--level-2);
     box-shadow: 0px 5px 10px 0 var(--level-2);
 }
+#description button:active {
+    /* text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.551);
+    font-size: 16px; */
+    background-color: var(--level-2);
+    box-shadow: 0px 5px 10px 0 var(--level-2);
+}
 
 @media (max-width: 768px) {
     .container {
         flex-direction: column-reverse;
-        gap: 90px;
+        gap: 50px;
     }
 
-    #image {margin-left: 4%;}
-    #description {max-width: 100%;}
-    #description button {
-        margin-left: 32%;
+    #image {
+        width: 180px;
+        height: 180px;
     }
+    #description {max-width: 100%;}
+    #btn-container {justify-content: center;}
 }
