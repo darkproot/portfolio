@@ -19,6 +19,7 @@
     margin: 0;
     text-decoration: none;
     font-family: 'texte', sans-serif;
+    /* border: 1px solid green; */
 }
 
 body {
@@ -37,6 +38,12 @@ nav label {
     line-height: 80px;
     font-weight: bold;
     padding: 0 30px;
+    transition: all .5s ease;
+}
+nav label:hover {
+    background: linear-gradient(45deg, var(--level-1), var(--level-2));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 nav ul {
     list-style: none;
@@ -66,7 +73,84 @@ nav ul li a:hover {
 
 /* Main part */
 main {
-    background-color: #6B0213;
+    background-color: var(--base);
+    width: 100%;
+    min-height: 84vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 60vw;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 8%;
+    background-color: rgba(255, 255, 255, 0.159);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.395),
+    inset 3px 3px 5px rgba(255, 255, 255, 0.215);
+}
+
+#image {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#image img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+#description {
+    max-width: 50%;
+    color: white;
+}
+
+#hello {
+    font-size: 20px;
+}
+#hello span {
+    color: var(--level-1);
+    font-weight: 700;
+}
+
+#name {
+    font-size: 50px;
+    color: var(--level-1);
+    text-shadow: 1px 1px 5px var(--level-1);
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+#description1 {font-size: 20px;}
+#description2 {
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+#description #description1, #description2 {
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.479);
+}
+
+#description button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--level-1);
+    font-weight: 500;
+    box-shadow: 0px 5px 10px 0 var(--level-1);
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .2s ease;
+}
+#description button:hover {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.551);
+    font-size: 16px;
+    background-color: var(--level-2);
+    box-shadow: 0px 5px 10px 0 var(--level-2);
 }
