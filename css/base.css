@@ -1,10 +1,10 @@
 :root {
     --base: #20272F;
-    --level-1: #840017;
-    --level-2: #6B0213;
-    --level-3: #4E000E;
-    --level-4: #35000A;
-    --level-5: #1A0004;
+    --level-1: #E95354;
+    --level-2: #CE2B2C;
+    --level-3: #B41C1B;
+    --level-4: #870F10;
+    --level-5: #6A1010;
 }
 
 @font-face {
@@ -31,6 +31,9 @@ nav {
     background-color: var(--base);
     height: 80px;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 nav label {
     color: white;
@@ -41,7 +44,7 @@ nav label {
     transition: all .5s ease;
 }
 nav label:hover {
-    background: linear-gradient(45deg, var(--level-1), var(--level-2));
+    background: linear-gradient(90deg, var(--level-1), var(--level-2), blue);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
