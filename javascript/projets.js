@@ -3,7 +3,7 @@ const PROJETS = [
     {
         "name": "C Learning",
         "description": "Une application pour apprendre a programmer en C",
-        "icon": "../assets/images/C learning.png",
+        "icon": "../assets/images/C-learning.png",
         "url": "https://github.com/darkproot/C-Learning-"
     },
     {
