@@ -65,23 +65,34 @@ main {
     width: 100%;
 }
 
-.see_more_btn button {
+.see_more_btn button a {
     position: absolute;
-    margin-top: 10px;
+    margin-top: 0px;
     width: 100%;
     padding: 15px 0;
     border-radius: 10px;
     font-size: 1.1rem;
     border: none;
-    color: white;
     cursor: pointer;
     text-shadow: 2px 2px 2px black;
     background: linear-gradient(45deg, var(--level-1), var(--level-2));
     box-shadow: 0 8px 0 var(--level-3),
     inset 3px 3px 3px rgba(255, 255, 255, 0.463);
     transition: all .2s ease;
+    text-decoration: none;
+    color: white;
 }
+
 .see_more_btn button:active {
     top: 10px;
     box-shadow: inset 3px 3px 3px rgba(255, 255, 255, 0.463);
+}
+
+@media (max-width: 768px) {
+    #description { font-size: 15px; }
+    main { margin-top: 50px; }
+    .container { background-color: rgba(0, 0, 0, 0.338); }
+    .see_more_btn button a {
+        padding: 10px 0;
+    }
 }

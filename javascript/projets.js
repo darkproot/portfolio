@@ -3,17 +3,20 @@ const PROJETS = [
     {
         "name": "C Learning",
         "description": "Une application pour apprendre a programmer en C",
-        "icon": "../assets/images/C learning.png"
+        "icon": "../assets/images/C learning.png",
+        "url": "https://github.com/darkproot/C-Learning-"
     },
     {
         "name": "Preparix",
         "description": "Une application pour apprendre a programmer en Python",
-        "icon": "../assets/images/preparix.png"
+        "icon": "../assets/images/preparix.png",
+        "url": "https://github.com/darkproot/portfolio"
     },
     {
         "name": "Chatx",
         "description": "Une application pour faire communiquer localement deux machines",
-        "icon": "../assets/images/chatx.png"
+        "icon": "../assets/images/chatx.png",
+        "url": "https://github.com/darkproot/Chatx"
     },
 ];
 
@@ -27,7 +30,7 @@ PROJETS.forEach((projet) => {
             <p id="name">${projet.name}</p>
             <p id="description">${projet.description}.</p>
             <div class="see_more_btn">
-                <button>Voir plus</button>
+                <button><a href="${projet.url}">Voir plus</a></button>
             </div>
         </div>
 
