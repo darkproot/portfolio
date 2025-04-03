@@ -7,6 +7,8 @@
     --level-5: #6A1010;
 }
 
+::-webkit-scrollbar { display: none;}
+
 @font-face {
     font-family: 'texte';
     src: url("../assets/fonts/WorkSans-Medium.ttf") format('truetype');

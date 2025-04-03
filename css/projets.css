@@ -70,7 +70,7 @@ main {
     width: 100%;
 }
 
-.see_more_btn button a {
+.see_more_btn button {
     position: absolute;
     margin-top: 0px;
     width: 100%;
