@@ -15,6 +15,7 @@ const PROJETS = [
             "../assets/images/C-Learning/5.jpg",
         ],
         "url-download": "https://github.com/darkproot/C-Learning-",
+        "url-entreprise": "https://github.com/darkproot",
     },
     {
         "name": "Preparix",
@@ -30,6 +31,7 @@ const PROJETS = [
             "../assets/images/Preparix/4.jpg",
         ],
         "url-download": "https://github.com/darkproot/Preparix",
+        "url-entreprise": "https://github.com/darkproot",
     },
     {
         "name": "Chatx",
@@ -46,6 +48,7 @@ const PROJETS = [
             "../assets/images/Chatx/5.jpg",
             "../assets/images/Chatx/6.jpg",
         ],
+        "url-entreprise": "https://github.com/darkproot",
         "url-download": "https://github.com/darkproot/Chatx",
     },
 ];
@@ -87,73 +90,7 @@ function change_page(name) {
     }
 
     const PROJET = PROJETS[idx];
-    sessionStorage.setItem('projets', JSON.stringify(PROJETS));
-    sessionStorage.setItem('projet', idx);
+    sessionStorage.setItem('projet', JSON.stringify(PROJET));
 
-    const page = `
-    <!DOCTYPE html>
-<html lang="fr-FR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X-verse (${PROJET.name})</title>
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/projet.css">
-    <link rel="shortcut icon" href="../assets/images/xverse.jpg" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <nav>
-            <label for="pseudo">X-verse</label>
-            <ul>
-                <li><a href="../index.html" id="home">Home</a></li>
-                <li><a href="../pages/projets.html" class="active" id="projets">Projets</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Application information -->
-        <div class="app-head-container">
-            <div class="image-container">
-                <img src="${PROJET.icon}" alt="C-Learning">
-            </div>
-            <div class="app-name-container">
-                <p class="app-name">${PROJET.name}</p>
-                <a href="#" class="app-entreprise">${PROJET.entreprise}</a>
-            </div>
-        </div>
-
-        <!-- Application actions -->
-        <div class="app-actions-container">
-            <select name="OS" id="OS-selection">
-                <option value="window">Window</option>
-                <option value="macOS">macOS</option>
-                <option value="linux">Linux</option>
-            </select>
-            <button><a href="${PROJET["url-download"]}">Telecharger</a></button>
-        </div>
-
-        <!-- Application Galerie -->
-        <div class="app-galerie-container">
-            <video controls loop autoplay>
-                <source src="../assets/videos/C-Learning/1.mp4">
-            </video>
-        </div>
-
-        <!-- Application Description -->
-        <div class="app-description-container">
-            <p class="title">A propos de l'application</p>
-            <p class="description">${PROJET["big-description"]}</p>
-        </div>
-    </main>
-
-    <footer></footer>
-    <script src="../javascript/main.js"></script>
-    <script src="../javascript/projet.js"></script>
-</body>
-</html>
-    `;
-    const win = window.open('../pages/projets.html', '_blank');
-    win.document.write(page);
+    window.location.href = "../pages/projet.html";
 }
