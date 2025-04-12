@@ -155,7 +155,7 @@ main {
 }
 
 .app-description-container .description {
-    font-weight: lighter;
+    font-family: texte-light, sans-serif;
     font-size: 1rem;
 }
 
