@@ -1,0 +1,26 @@
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    top: 0;
+    left: 0;
+
+    color: var(--blanc);
+    width: 100%;
+    height: var(--nav-bar-height);
+    background-color: var(--gris);
+    border-bottom: 2px solid hsl(210, 29%, 20%);
+
+}
+
+.navbar label {
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-left: 24px;
+    background: linear-gradient(45deg, var(--bleu), var(--sec));
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

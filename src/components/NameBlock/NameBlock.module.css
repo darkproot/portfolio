@@ -1,0 +1,72 @@
+:root {
+    --block-padding-left: 48px;
+}
+.container {
+    margin-top: calc(var(--nav-bar-height) + 48px);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+.text p { 
+    color: var(--blanc); 
+    margin-left: var(--block-padding-left);
+}
+.p_one {
+    font-size: 2rem;
+    font-weight: 800;
+}
+.p_one span {
+    background: linear-gradient(45deg, var(--bleu), var(--sec));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+.p_two {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.img_container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.action {
+    width: 200px;
+    height: 40px;
+    font-weight: 500;
+    margin-top: 12px;
+    color: var(--blanc);
+    border: none;
+    border-radius: 8px;
+    margin-left: var(--block-padding-left);
+    background: linear-gradient(45deg, var(--bleu), var(--sec));
+    cursor: pointer;
+}
