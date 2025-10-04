@@ -1,0 +1,31 @@
+:root {
+    --block-padding-left: 48px;
+}
+.container {
+    margin-top: calc(var(--nav-bar-height) + 48px);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.container h2 {
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(45deg, var(--bleu), var(--sec), var(--bleu), var(--sec), var(--bleu), var(--sec));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon_container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.language_container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

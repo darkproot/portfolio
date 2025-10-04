@@ -68,5 +68,31 @@
     border-radius: 8px;
     margin-left: var(--block-padding-left);
     background: linear-gradient(45deg, var(--bleu), var(--sec));
+    transition: all .2s ease;
     cursor: pointer;
+}
+.action:hover { 
+    transform: scale(1.05);
+    font-weight: bold; 
+}
+.action:active { transform: scale(.99); }
+
+@media (max-width: 640px) {
+    .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .action, .text p {
+        margin-left: 0;
+    }
+
+    .text { 
+        margin-top: var(--block-padding-left); 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
