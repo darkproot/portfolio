@@ -1,19 +1,19 @@
 const SKILL = [
     {
         name: 'React',
-        link: '/src/assets/react.svg'
+        link: '/react.svg'
     },
     {
         name: 'Flet',
-        link: '/src/assets/flet.png'
+        link: '/flet.png'
     },
     {
         name: 'Electron',
-        link: '/src/assets/electron.svg'
+        link: '/electron.svg'
     },
     {
         name: 'Flask',
-        link: '/src/assets/flask.svg'
+        link: '/flask.svg'
     },
 ]
 
