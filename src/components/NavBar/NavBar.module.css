@@ -33,8 +33,17 @@
     height: var(--nav-bar-height);
     background-color: var(--gris);
     border-bottom: 2px solid hsl(210, 29%, 20%);
-
 }
+
+/* .navbar::before {
+    content: '';
+    position: absolute;
+    height: 130%;
+    width: 100%;
+    top: var(--nav-bar-height);
+    left: 0;
+    background: linear-gradient(-180deg, var(--gris), transparent);
+} */
 
 .navbar label {
     font-weight: bold;

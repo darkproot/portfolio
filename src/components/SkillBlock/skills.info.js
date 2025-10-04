@@ -4,16 +4,16 @@ const SKILL = [
         link: '/src/assets/react.svg'
     },
     {
-        name: 'Spring boot',
-        link: '/public/vite.svg'
+        name: 'Flet',
+        link: '/src/assets/flet.png'
     },
     {
         name: 'Electron',
-        link: '/src/assets/react.svg'
+        link: '/src/assets/electron.svg'
     },
     {
-        name: 'Flet',
-        link: '/public/vite.svg'
+        name: 'Flask',
+        link: '/src/assets/flask.svg'
     },
 ]
 

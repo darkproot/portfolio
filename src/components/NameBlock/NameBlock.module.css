@@ -2,7 +2,7 @@
     --block-padding-left: 48px;
 }
 .container {
-    margin-top: calc(var(--nav-bar-height) + 48px);
+    margin-top: calc(var(--nav-bar-height) + 32px);
     display: flex;
     justify-content: space-between;
 }
