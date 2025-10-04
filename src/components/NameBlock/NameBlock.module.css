@@ -70,10 +70,11 @@
     background: linear-gradient(45deg, var(--bleu), var(--sec));
     transition: all .2s ease;
     cursor: pointer;
+    font-weight: bold;
 }
 .action:hover { 
     transform: scale(1.05);
-    font-weight: bold; 
+    font-weight: bolder; 
 }
 .action:active { transform: scale(.99); }
 

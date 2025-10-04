@@ -1,3 +1,24 @@
+@keyframes logo {
+    0% {
+        background: linear-gradient(45deg, var(--bleu), var(--sec));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    50% {
+        background: linear-gradient(45deg, var(--sec), var(--bleu));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } 
+    100% {
+        background: linear-gradient(45deg, var(--bleu), var(--sec));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } 
+}
+
 .navbar {
     position: fixed;
     display: flex;
@@ -5,6 +26,7 @@
     align-items: center;
     top: 0;
     left: 0;
+    z-index: 100;
 
     color: var(--blanc);
     width: 100%;
@@ -23,4 +45,5 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: logo 5s linear infinite;
 }

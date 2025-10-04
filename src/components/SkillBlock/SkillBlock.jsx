@@ -10,11 +10,22 @@ export default function SkillBlock() {
             <h2>MY SKILLS</h2>
 
             <div className={styles.icon_container}>
-               {SKILL.map((element, index) => <Icon key={index} link={element.link} name={element.name}/>)}
+               {SKILL.map((element, index) => 
+               <Icon 
+                    key={index} 
+                    link={element.link} 
+                    name={element.name}
+               />)}
             </div>
 
             <div className={styles.language_container}>
-                {LANGUAGE.map((element, index) => <Language key={index} link={element.link} name={element.name} value={element.value} />)}
+                {LANGUAGE.map((element, index) => 
+                <Language 
+                    key={index} 
+                    link={element.link} 
+                    name={element.name} 
+                    value={element.value} 
+                />)}
             </div>
         </div>
     )
