@@ -1,11 +1,16 @@
 :root {
   --nav-bar-height: 40px;
-
+  
   --blanc: #fafafa;
   --gris: #2C3E50;
   --bleu: #2980B9;
   --gris-bleu: #BDC3C7;
-  --sec: tomato; /*#F39C12*/
+  --sec: rgb(255, 91, 62); /*#F39C12*/
+}
+
+@font-face {
+  font-family: texte;
+  src: url(/fonts/WorkSans-Regular.ttf);
 }
 
 #root {
@@ -22,10 +27,11 @@ body {
   background-color: var(--gris);
 }
 
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans Linear B", sans-serif;
+  font-family: texte, sans-serif;
   font-style: normal;
 }
 

@@ -9,19 +9,19 @@ const PROJET = [
         name: 'Chat-X',
         icon: '/chatx.ico',
         link: 'https://github.com/darkproot/chatx',
-        description: 'Une Application pour apprendre a programmer en C'
+        description: 'Une Application pour envoyer des messages entre machine sur un même reseau.'
     },
     {
         name: 'Hagdarah',
         icon: '/Hagdarah.ico',
         link: 'https://hagdarah.onrender.com',
-        description: 'Une Application pour apprendre a programmer en C'
+        description: 'Un site qui presente un résumé par unité d\'enseignement.'
     },
     {
         name: 'Preparix',
         icon: '/chatx.ico',
         link: 'https://github.com/darkproot/preparix',
-        description: 'Une Application pour apprendre a programmer en C'
+        description: 'Une Application pour apprendre a programmer en Python'
     },
 ]
 

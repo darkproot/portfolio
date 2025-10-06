@@ -7,6 +7,12 @@
     border-radius: 12px;
     width: 200px;
     max-height: 300px;
+    border: 2px solid rgba(255, 255, 255, 0.123);
+}
+
+.container:hover .img_container img {
+    transition: all .2s ease;
+    transform: scale(1.05);
 }
 
 .container h3 {
@@ -30,7 +36,7 @@
 }
 
 .container p {
-    height: 80px;
+    height: 90px;
     overflow-y: auto;
     color: hsl(0, 0%, 70%);
     line-height: 1.25;

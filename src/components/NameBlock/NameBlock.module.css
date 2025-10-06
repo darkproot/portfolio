@@ -21,10 +21,11 @@
     margin-left: var(--block-padding-left);
 }
 .p_one {
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 800;
 }
 .p_one span {
+    font-size: 1.2em;
     background: linear-gradient(45deg, var(--bleu), var(--sec));
     -webkit-background-clip: text;
     background-clip: text;

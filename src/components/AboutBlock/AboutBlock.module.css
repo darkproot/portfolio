@@ -10,6 +10,30 @@
 
 
 
+
+.highlight {
+    position: relative;
+    display: inline-block;
+    padding: 0 4px;
+    color: var(--sec);
+    font-weight: bold;
+}
+.highlight::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: var(--sec);
+    z-index: -1;
+    transition: all .5s ease;
+}
+.highlight:hover {
+    transition: all .2s ease;
+    color: rgba(255, 255, 255, 0.882);
+}
+.highlight:hover::before { width: 100%; }
 .text {
     display: flex;
     flex: 1;
@@ -29,6 +53,7 @@
 .text p {
     line-height: 1.5;
     margin-right: var(--block-padding-left);
+    font-size: 1.2em;
 }
 
 
@@ -56,6 +81,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: var(--block-padding-left);
     }
 
     .img_container { margin-left: 0; }
