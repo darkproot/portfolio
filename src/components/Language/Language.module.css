@@ -4,12 +4,12 @@
 }
 
 @keyframes progress_bar {
-    from {
-        width: 0%;
-    }
-    to {
-        width: var(--language-progess-width);
-    }
+    from { width: 0%; }
+    to { width: var(--language-progess-width); }
+}
+@keyframes etiquette {
+    from { left: 0; }
+    to { left: var(--language-progess-width); }
 }
 
 .container {
@@ -38,8 +38,26 @@
     object-fit: contain;
 }
 
-.value_container label {
-    color: white;
+.value_container label { 
+    position: relative;
+    color: white; 
+}
+.value_container label::before {
+    content: var(--progress) ;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -8px;
+    font-weight: 200;
+    left: var(--language-progess-width);
+    background: rgba(0, 0, 0, 0.323);
+    height: 30px;
+    width: 40px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    transition: all .5s ease;
+    animation: etiquette 1s linear forwards;
 }
 .value_container {
     display: flex;
@@ -70,11 +88,11 @@
 
 .container:hover .img_container img {
     transition: all .2s ease;
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
-.container:hover .progress {
+.container:hover .progress::before {
     transition: all .2s ease;
-    box-shadow: 2px 2px 2px 2px hsla(204, 64%, 44%, 0.365);
+    background-color: hsl(204, 64%, 39%);
 }
 
 @media (max-width: 810px) {

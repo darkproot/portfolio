@@ -51,9 +51,9 @@
     font-weight: bold;
 }
 .text p {
-    line-height: 1.5;
+    line-height: 1.25;
     margin-right: var(--block-padding-left);
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 
@@ -91,6 +91,14 @@
         margin-left: var(--block-padding-left);
         margin-right: var(--block-padding-left);
     }
+
+    .highlight { 
+        color: white; 
+        border-radius: 4px;
+        overflow: hidden;
+        padding: 0 8px;
+    }
+    .highlight::before { width: 100%; }
 
     .text p { margin-right: 0; }
 }

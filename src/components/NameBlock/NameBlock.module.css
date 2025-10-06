@@ -16,11 +16,9 @@
     justify-content: center;
     gap: 8px;
 }
-.text p { 
-    color: var(--blanc); 
-    margin-left: var(--block-padding-left);
-}
+.text p { margin-left: var(--block-padding-left); }
 .p_one {
+    color: var(--blanc); 
     font-size: 2em;
     font-weight: 800;
 }
@@ -33,8 +31,9 @@
     font-weight: bolder;
 }
 .p_two {
+    color: whitesmoke;
     font-size: .9rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 
@@ -72,6 +71,9 @@
     transition: all .2s ease;
     cursor: pointer;
     font-weight: bold;
+    box-shadow: 3px 3px 10px var(--sec),
+    -3px -3px 10px var(--bleu);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.29);
 }
 .action:hover { 
     transform: scale(1.05);

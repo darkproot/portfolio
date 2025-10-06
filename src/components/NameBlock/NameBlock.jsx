@@ -5,7 +5,7 @@ export default function NameBlock() {
         <div className={styles.container}>
             <div className={styles.text}>
                 <p className={styles.p_one}>Hi, I'm <span>Elie</span></p>
-                <p className={styles.p_two}>Ele. Ingenieur</p>
+                <p className={styles.p_two}>Élève Ingénieur</p>
                 <button className={styles.action}>Telecharger CV</button>
             </div>
             <div className={styles.image}>
