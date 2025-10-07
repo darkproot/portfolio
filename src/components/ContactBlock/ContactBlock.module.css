@@ -1,0 +1,25 @@
+.container {
+    margin-top: 32px;
+}
+
+.icon_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
+
+.container h2 {
+    text-align: center;
+    background: linear-gradient(90deg, var(--bleu), var(--sec), var(--bleu), var(--sec));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 640px) {
+    .icon_container { gap: 24px; }
+}

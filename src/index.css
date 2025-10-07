@@ -40,6 +40,7 @@ body {
   flex-direction: column;
   /* border: 2px dashed var(--bleu); */
   min-height: 100vh;
+  padding-bottom: 32px;
   width: 80%;
 }
 

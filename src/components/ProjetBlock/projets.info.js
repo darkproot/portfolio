@@ -6,12 +6,6 @@ const PROJET = [
         description: 'Une Application pour apprendre a programmer en C'
     },
     {
-        name: 'Chat-X',
-        icon: '/chatx.ico',
-        link: 'https://github.com/darkproot/chatx',
-        description: 'Une Application pour envoyer des messages entre machine sur un même reseau.'
-    },
-    {
         name: 'Hagdarah',
         icon: '/Hagdarah.ico',
         link: 'https://hagdarah.onrender.com',

@@ -2,12 +2,12 @@ const LANGUAGE = [
     {
         name: 'Python',
         link: '/python.svg',
-        value: 78
+        value: 70
     },
     {
         name: 'JavaScript',
         link: '/Unofficial_JavaScript_logo_2.svg.png',
-        value: 61
+        value: 56
     },
     {
         name: 'C',
@@ -17,7 +17,12 @@ const LANGUAGE = [
     {
         name: 'Java',
         link: '/java-icon.svg',
-        value: 40
+        value: 30
+    },
+    {
+        name: 'Anglais',
+        link: '/icons8-css3.svg',
+        value: 70
     },
     {
         name: 'HTML',
