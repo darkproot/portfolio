@@ -26,7 +26,7 @@ const CONTACT = [
     {
         name: 'telegram',
         color: "#0088CC",
-        icon: '/public/telegram.svg',
+        icon: '/telegram.svg',
         link: 'https://t.me/xverse3'
     },
 ]
