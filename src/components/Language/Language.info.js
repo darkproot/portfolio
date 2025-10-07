@@ -21,7 +21,7 @@ const LANGUAGE = [
     },
     {
         name: 'Anglais',
-        link: '/icons8-css3.svg',
+        link: '/united-kingdom-uk-svgrepo-com.svg',
         value: 70
     },
     {
