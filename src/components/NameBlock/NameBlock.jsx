@@ -10,7 +10,7 @@ export default function NameBlock() {
             </div>
             <div className={styles.image}>
                 <div className={styles.img_container}>
-                    <img src="/public/redjohn1.jpg" alt="Redjohn" />
+                    <img src="/redjohn1.jpg" alt="Redjohn" />
                 </div>
             </div>
         </div>
