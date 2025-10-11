@@ -6,7 +6,7 @@ export default function NavBar() {
 
     return(
         <div className={styles.navbar}>
-            <label htmlFor="Logo" onClick={go_to_github}>x-verse</label>
+            <h1 htmlFor="Logo" onClick={go_to_github}>x-verse</h1>
         </div>
     )
 }

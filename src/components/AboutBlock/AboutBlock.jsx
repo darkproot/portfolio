@@ -5,7 +5,7 @@ export default function AboutBlock() {
         <div className={styles.container}>
             <div className={styles.image}>
                 <div className={styles.img_container}>
-                    <img src="/Redjohn-figurine-pop.jpg" alt="Redjohn" />
+                    <img src="/redjohn.jpg" alt="Redjohn" />
                 </div>
             </div>
             <div className={styles.text}>
