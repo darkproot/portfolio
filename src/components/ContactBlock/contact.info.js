@@ -21,7 +21,7 @@ const CONTACT = [
         name: 'email',
         color: "gold",
         icon: '/mail-alt-3-svgrepo-com.svg',
-        link: 'mailto:woumojohnny@gmail.com?subjet=Renseignement'
+        link: 'mailto:woumojohnny@gmail.com?subject=Renseignement'
     },
     {
         name: 'telegram',

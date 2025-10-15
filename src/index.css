@@ -11,6 +11,15 @@
 @font-face {
   font-family: texte;
   src: url(/fonts/WorkSans-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: titre;
+  src: url(/fonts/Over\ There.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 #root {
@@ -31,7 +40,7 @@ body {
 * {
   margin: 0;
   padding: 0;
-  font-family: texte, sans-serif;
+  font-family: texte, Arial, Helvetica, sans-serif;
   font-style: normal;
 }
 
